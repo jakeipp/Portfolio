@@ -1,8 +1,11 @@
 {
-  "name": "ABArtPrints",
+  "name": "portfolio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "17.x"
+  },
   "scripts": {
     "dev": "npx parcel src/index.html",
     "build": "npx parcel build src/index.html"
