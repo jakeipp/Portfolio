@@ -1,0 +1,7 @@
+$breakpoints: ("nav-desktop" : "40em", "card-desktop" : "45em");
+
+@mixin break($size) {
+    @media (min-width: map-get($breakpoints, $size)){
+        @content;
+    }
+}

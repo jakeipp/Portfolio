@@ -1,0 +1,38 @@
+@use '../abstracts' as *;
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
+}
+
+main {
+    margin-top: 5rem;
+    @include break(nav-desktop){
+        margin-left: 5rem;
+        margin-top: 0;
+    }
+}
+
+//Themed Scrollbar
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: black;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: $clr-primary;
+}
+
