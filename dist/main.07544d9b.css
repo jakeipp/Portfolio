@@ -260,8 +260,17 @@ section:nth-of-type(even)::after {
   z-index: 50;
 }
 
-.card {
+footer {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background-color: #6F81B3;
+}
+
+.card {
+  display: none;
   align-items: center;
   justify-content: center;
   gap: 2rem;
@@ -335,6 +344,9 @@ section:nth-of-type(even)::after {
 }
 .card .topic, .card .topic3, .card .topic2, .card .topic1 {
   display: none;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2rem;
   height: 20rem;
   border-style: solid;
   border-width: 0.1rem;
@@ -344,6 +356,69 @@ section:nth-of-type(even)::after {
   transition: transform ease-in-out 250ms;
   width: 60%;
   background-color: #B8CBFF;
+}
+.card .topic ul, .card .topic3 ul, .card .topic2 ul, .card .topic1 ul {
+  text-align: left;
+}
+@media (min-width: 45em) {
+  .card {
+    display: flex;
+  }
+}
+
+.card_mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+.card_mobile h2 {
+  position: relative;
+  color: white;
+  font-size: 2rem;
+  width: max-content;
+}
+.card_mobile h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 0.125rem;
+  background: white;
+  bottom: -0.2em;
+  left: 0;
+  right: 0;
+}
+.card_mobile .topic {
+  display: block;
+  font-size: 1rem;
+  text-align: center;
+  padding: 2rem;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: white;
+  border-radius: 1rem;
+  width: 100%;
+  background-color: #B8CBFF;
+}
+.card_mobile .topic ul {
+  text-align: left;
+}
+@media (min-width: 45em) {
+  .card_mobile {
+    display: none;
+  }
+}
+
+.projects {
+  text-align: center;
+  border: 0.125rem solid white;
+}
+.projects ul {
+  text-align: left;
+}
+.projects th, .projects td {
+  border: 0.125rem solid white;
 }
 
 /*# sourceMappingURL=/main.07544d9b.css.map */

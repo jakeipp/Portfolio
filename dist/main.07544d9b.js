@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"/Users/jakeippolito/Projects/Portfolio/src/img/Hero.JPG":[["Hero.021793f0.JPG","img/Hero.JPG"],"img/Hero.JPG"],"/Users/jakeippolito/Projects/Portfolio/src/img/layered-waves-haikei.svg":[["layered-waves-haikei.2b1ca107.svg","img/layered-waves-haikei.svg"],"img/layered-waves-haikei.svg"],"/Users/jakeippolito/Projects/Portfolio/src/img/curve.svg":[["curve.58b1cefa.svg","img/curve.svg"],"img/curve.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"/Users/jakeippolito/Projects/portfolio/src/img/Hero.JPG":[["Hero.021793f0.JPG","img/Hero.JPG"],"img/Hero.JPG"],"/Users/jakeippolito/Projects/portfolio/src/img/layered-waves-haikei.svg":[["layered-waves-haikei.2b1ca107.svg","img/layered-waves-haikei.svg"],"img/layered-waves-haikei.svg"],"/Users/jakeippolito/Projects/portfolio/src/img/curve.svg":[["curve.58b1cefa.svg","img/curve.svg"],"img/curve.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62749" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51829" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

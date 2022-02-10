@@ -1,0 +1,12 @@
+@use '../abstracts' as *;
+
+.projects {
+    text-align: center;
+    ul {
+        text-align: left;
+    }
+    border: 0.125rem solid white;
+    th, td {
+        border: 0.125rem solid white;
+    }
+}

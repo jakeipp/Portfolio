@@ -1,7 +1,7 @@
 @use '../abstracts' as *;
 
 .card {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     gap: 2rem;
@@ -93,6 +93,9 @@
 
     .topic {
         display: none;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 2rem;
         height: 20rem;
         border: {
             style: solid;
@@ -104,6 +107,9 @@
         transition: transform ease-in-out 250ms;
         width: 60%;
         background-color: $clr-primary;
+        ul {
+            text-align: left;
+        }
     }
 
     .topic1 {
@@ -116,6 +122,10 @@
 
     .topic3 {
         @extend .topic;
+    }
+
+    @include break(card-desktop) {
+        display: flex;
     }
 
 }

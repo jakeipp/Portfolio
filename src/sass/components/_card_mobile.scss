@@ -1,0 +1,45 @@
+@use '../abstracts' as *;
+
+.card_mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    h2 {
+        position: relative;
+        color: white;
+        font-size: 2rem;
+        width: max-content;
+    }
+    h2::after {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 0.125rem;
+        background: white;
+        bottom: -0.2em;
+        left: 0;
+        right: 0;
+    }
+    .topic {
+        display: block;
+        font-size: 1rem;
+        text-align: center;
+        padding: 2rem;
+        border: {
+            style: solid;
+            width: 0.1rem;
+            color: white;
+            radius: 1rem;
+        }
+        width: 100%;
+        background-color: $clr-primary;
+        ul {
+            text-align: left;
+        }
+    }
+    @include break(card-desktop) {
+        display: none;
+    }
+}
